@@ -5,6 +5,7 @@ import java.util.List;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+
     public static void main(String[] args) {
 
         List<Processors> processes = Arrays.asList(
@@ -16,6 +17,9 @@ public class Main {
         );
 
         FCFS.execute(new ArrayList<>(processes));
+        SJF.execute(new ArrayList<>(processes));
+        RoundRobin.execute(new ArrayList<>(processes), 4);
+        PriorityScheduling.execute(new ArrayList<>(processes));
     }
 
 

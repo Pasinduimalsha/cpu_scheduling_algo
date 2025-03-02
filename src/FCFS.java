@@ -22,7 +22,8 @@ public class FCFS {
         printResults("First Come First Serve (FCFS)",processors);
     }
 
-    private static void printResults(String tittle, List<Processors> processors) {
+
+    public static void printResults(String tittle, List<Processors> processors) {
         System.out.println("\n" + tittle);
         System.out.println("PS\tAT\tBT\tCT\tTAT\tWT");
 
@@ -37,4 +38,6 @@ public class FCFS {
 
 
     }
+
+
 }
